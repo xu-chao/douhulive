@@ -26,9 +26,3 @@
 斗鱼弹幕协议参考	[斗鱼开放平台](https://open.douyu.com/source/api/63)
 
 BILIBILI直播弹幕协议参考	[lovelyyoshino/Bilibili-Live-API](https://github.com/lovelyyoshino/Bilibili-Live-API)
-
-## 应用页面
-
-<img src="https://github.com/guyijie1211/JustLive-Android/blob/master/pic/1.jpg" width="250" alt="首页推荐"><img src="https://github.com/guyijie1211/JustLive-Android/blob/master/pic/2.jpg" width="250" alt="关注">
-<img src="https://github.com/guyijie1211/JustLive-Android/blob/master/pic/3.jpg" width="250" alt="直播页面"><img src="https://github.com/guyijie1211/JustLive-Android/blob/master/pic/5.png" width="250" alt="直播搜索">
-<img src="https://github.com/guyijie1211/JustLive-Android/blob/master/pic/4.jpg" width="500" alt="弹幕设置">

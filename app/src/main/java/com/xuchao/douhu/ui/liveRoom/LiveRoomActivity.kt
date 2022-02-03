@@ -550,7 +550,7 @@ class LiveRoomActivity : AppCompatActivity(), Utils.OnAppStatusChangedListener, 
             "huya" -> "https://m.huya.com/$roomId"
             "cc" -> "https://cc.163.com/$roomId"
             "egame" -> "https://egame.qq.com/$roomId"
-            else -> "https://github.com/guyijie1211/JustLive-Android/issues/new"
+            else -> "http://live.xuchaoyufei.xyz/"
         }
         val uri = Uri.parse(url)
         val intent = Intent(Intent.ACTION_VIEW, uri)

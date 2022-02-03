@@ -17,7 +17,9 @@ import java.security.NoSuchAlgorithmException
 import android.view.ViewGroup.MarginLayoutParams
 import com.umeng.analytics.MobclickAgent
 import com.umeng.commonsdk.UMConfigure
+import xyz.doikki.videoplayer.exo.ExoMediaPlayerFactory
 import xyz.doikki.videoplayer.ijk.IjkPlayerFactory
+import xyz.doikki.videoplayer.player.AndroidMediaPlayerFactory
 
 class SunnyWeatherApplication : Application() {
     companion object {
@@ -143,8 +145,12 @@ class SunnyWeatherApplication : Application() {
         context = applicationContext
         VideoViewManager.setConfig(
             VideoViewConfig.newBuilder()
-            //使用ExoPlayer解码
-            .setPlayerFactory(IjkPlayerFactory.create())
+                //使用使用ExoPlayer解码
+                .setPlayerFactory(ExoMediaPlayerFactory.create())
+                //使用IjkPlayer解码
+                // .setPlayerFactory(IjkPlayerFactory.create())
+                //使用MediaPlayer解码
+                // .setPlayerFactory(AndroidMediaPlayerFactory.create())
             .build())
     }
 }

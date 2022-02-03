@@ -14,7 +14,7 @@ import androidx.annotation.Nullable;
 import xyz.doikki.videocontroller.StandardVideoController;
 
 public class YJstandardController extends StandardVideoController {
-    private Boolean doubleTap = false;
+    private Boolean doubleTap = true;
 
     public YJstandardController(@NonNull Context context) {
         super(context);
