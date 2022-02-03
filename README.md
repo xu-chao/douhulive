@@ -1,12 +1,3 @@
-# JustLive-Android
-前端Web项目    [JustLive-Web](https://github.com/guyijie1211/JustLive-Web)
-
-网站页面    [live.yj1211.work](http://live.yj1211.work)
-
-qq交流群：645962588
-
-[点击下载app](https://github.com/guyijie1211/JustLive-Android/releases)
-
 #### 功能
 
 ✔	多平台直播信息获取
@@ -16,7 +7,6 @@ qq交流群：645962588
 ✔	弹幕获取
 
 ✔	直播间搜索
-
 
 
 ## 直播支持
