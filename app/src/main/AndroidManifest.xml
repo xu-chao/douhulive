@@ -69,6 +69,9 @@
             android:name="com.xuchao.douhu.ui.login.LoginActivity"
             android:label="登录" />
         <activity
+            android:name="com.xuchao.douhu.ui.about.AboutActivity"
+            android:label="关于" />
+        <activity
             android:name="com.xuchao.douhu.ui.login.RegisterActivity"
             android:label="注册" />
         <activity

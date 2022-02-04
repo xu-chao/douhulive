@@ -59,4 +59,14 @@
     <string name="setting">设置</string>
 
     <string name="update_title">更新提醒</string>
+
+    <string name="card_content">
+        目前直播平台众多，主播们与不同平台签约，对于用户来说关注自己喜欢的主播需要下载非常多的 App\n\n斗虎直播只有 30M 大小，非常流畅和简洁，一个 App 即可关注全网主播\n\n这是我业余时间独立开发的 App，希望能给你带来便利以及得到你的喜欢~\n\n如遇无法更新或更新后无法打开的问题，请卸载重装试试
+    </string>
+    <string name="share_content">
+        如遇无法更新或更新后无法打开的问题，请卸载重装试试
+    </string>
+    <string name="pure_writer">如有疑问可发邮件到 xuchao400@gmail.comr</string>
+    <string name="pure_mosaic">douhu.live</string>
+
 </resources>

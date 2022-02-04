@@ -41,6 +41,7 @@ import com.xuchao.douhu.logic.model.UpdateInfo
 import com.xuchao.douhu.ui.login.LoginActivity
 import com.xuchao.douhu.ui.setting.SettingActivity
 import com.umeng.analytics.MobclickAgent
+import com.xuchao.douhu.ui.about.AboutActivity
 import kotlinx.android.synthetic.main.dialog_update.*
 
 class MainActivity : AppCompatActivity(), AreaSingleFragment.FragmentListener {
@@ -104,17 +105,16 @@ class MainActivity : AppCompatActivity(), AreaSingleFragment.FragmentListener {
             DividerDrawerItem(),
             SecondaryDrawerItem().apply { nameRes = R.string.drawItem2; identifier = 2; isSelectable = false },
             DividerDrawerItem(),
-            SecondaryDrawerItem().apply { identifier = 3; nameRes = R.string.setting; iconicsIcon = GoogleMaterial.Icon.gmd_settings; isSelectable = false},
-            SwitchDrawerItem().apply { nameText = "夜间模式"; iconicsIcon = GoogleMaterial.Icon.gmd_brightness_4;
-                onCheckedChangeListener = nightChangeListener; isSelectable = false; isChecked = nightChecked}
+            SecondaryDrawerItem().apply { nameRes = R.string.setting; identifier = 3; iconicsIcon = GoogleMaterial.Icon.gmd_settings; isSelectable = false},
+            SwitchDrawerItem().apply { nameText = "夜间模式"; iconicsIcon = GoogleMaterial.Icon.gmd_brightness_4; onCheckedChangeListener = nightChangeListener; isSelectable = false; isChecked = nightChecked}
         )
         // specify a click listener
         slider.onDrawerItemClickListener = { v, drawerItem, position ->
             // do something with the clicked item :D
             var intent: Intent? = null
             when {
+                drawerItem.identifier == 2L -> intent = Intent(this, AboutActivity::class.java)
                 drawerItem.identifier == 3L -> intent = Intent(this, SettingActivity::class.java)
-
             }
             if (intent != null) {
                 this.startActivity(intent)
@@ -242,9 +242,11 @@ class MainActivity : AppCompatActivity(), AreaSingleFragment.FragmentListener {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> main_drawerLayout.openDrawer(GravityCompat.START)
-//            android.R.id.home -> {
-//                Toast.makeText(this, "开发中", Toast.LENGTH_SHORT).show()
-//            }
+            android.R.id.home -> {
+                Toast.makeText(this, "开发中", Toast.LENGTH_SHORT).show()
+//                val intent = Intent(this, AboutActivity::class.java)
+//                startActivity(intent)
+            }
             R.id.toolbar_setting -> {
                 val intent = Intent(this, SettingActivity::class.java)
                 startActivity(intent)
