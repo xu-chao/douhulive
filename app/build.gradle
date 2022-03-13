@@ -4,6 +4,7 @@ plugins {
     id 'kotlin-android-extensions'
 }
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdk 31
@@ -118,4 +119,7 @@ dependencies {
 
     implementation 'com.drakeet.about:about:2.5.0'
     implementation 'com.drakeet.multitype:multitype:4.3.0'
+
+    implementation 'com.github.matthiasrobbers:shortbread:1.4.0'
+    kapt 'com.github.matthiasrobbers:shortbread-compiler:1.4.0'
 }

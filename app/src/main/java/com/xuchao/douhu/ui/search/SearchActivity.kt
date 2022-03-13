@@ -31,7 +31,9 @@ import kotlin.math.roundToInt
 import android.view.WindowManager
 import androidx.preference.PreferenceManager
 import com.blankj.utilcode.util.BarUtils
+import shortbread.Shortcut
 
+@Shortcut(id = "sc_search", icon = R.drawable.sc_search, shortLabel = "搜索主播", rank = 2)
 class SearchActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var sharedPref: SharedPreferences
     private lateinit var historySearchList: ArrayList<String>
